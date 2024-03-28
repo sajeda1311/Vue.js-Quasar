@@ -1,0 +1,145 @@
+// app global css in SCSS form:
+
+// Header stylings:
+
+.q-header {
+  z-index: 0;
+}
+
+.q-toolbar {
+  background-color: white;
+  color: black;
+  box-shadow: none;
+  border: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+.youtube {
+  width: 25%;
+}
+
+.search-field .q-field__control {
+  padding: 0 0 0 20px;
+  border-radius: 30px;
+  border: 1px solid #777;
+  &::before,
+  &::after {
+    content: none;
+  }
+
+  .keyboard {
+    padding: 8px;
+    color: #777;
+  }
+
+  .q-field__append {
+    border: 1px solid #777;
+    background: #f1f1f1;
+    border-radius: 30px;
+    padding: 24px;
+  }
+}
+
+.voice-icon {
+  padding: 20px;
+  font-size: 32px;
+}
+
+.menu-toggle {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.q-field__marginal {
+  height: 55px;
+}
+
+// Drawer menu stylings:
+
+.q-drawer {
+  background-color: white;
+}
+
+.q-btn .q-icon,
+.q-btn .q-spinner {
+  font-size: 2em;
+}
+
+// Main Content stylings:
+
+.main-page-content {
+  padding-top: 60px !important;
+}
+.main-page-content .q-item {
+  padding: 12px 0px;
+}
+
+.card {
+  display: flex;
+  flex-direction: row;
+}
+
+.q-layout__shadow:after {
+  box-shadow: none !important;
+}
+
+.my-card {
+  border-radius: 10px !important;
+}
+
+.my-card img {
+  border-radius: 10px !important;
+}
+
+.mr-120 {
+  margin-right: 120px;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.q-item__section--side > .q-icon {
+  font-size: 30px !important;
+}
+
+// Responsive Mobile css:
+
+@media only screen and (max-width: 568px) and (min-width: 320px) {
+  .q-drawer {
+    top: 48px;
+  }
+  .card {
+    flex-direction: column;
+  }
+  .mr-120 {
+    margin-right: 0px;
+  }
+  .youtube {
+    width: 65%;
+  }
+  .voice-icon {
+    padding: 2px;
+  }
+  .q-header {
+    z-index: 9999;
+  }
+  .search-field .q-field__control {
+    height: 45px;
+    .keyboard {
+      font-size: 22px !important;
+      height: auto;
+    }
+    .q-field__append {
+      padding: 15px;
+    }
+    .q-field__marginal {
+      height: 45px;
+    }
+  }
+}
